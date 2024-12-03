@@ -13,7 +13,7 @@ async def load_extension(package):
         pass
 
 async def install_package(path, link, files):
-    path = f"ballsdex/packages/{path}"
+    path = f"carfigures/packages/{path}"
 
     if os.path.exists(path):
         await ctx.send("Uninstalling current version...")
