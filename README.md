@@ -12,7 +12,7 @@ PACKAGE = "ADD YOUR PACKAGE HERE"
 
 
 import base64, requests
-r = requests.get(f"https://api.github.com/repos/Dotsian/BDPackages/contents/installers/{PACKAGE}.py")
+r = requests.get(f"https://api.github.com/repos/Arrorred/CFPackages/contents/installers/{PACKAGE}.py")
 
 if r.status_code == requests.codes.ok:
   await ctx.invoke(bot.get_command("eval"), body=base64.b64decode(r.json()["content"]).decode("UTF-8"))
@@ -22,7 +22,7 @@ else:
 
 ### Loading Packages
 
-Packages will not be loaded upon starting your bot. This is due to how Ballsdex packages are loaded. To solve this, open up the `bot.py` file in `ballsdex/core` and search for a line that starts with `PACKAGES`. At the end of the line, add a comma and quotation marks before the square bracket.
+Packages will not be loaded upon starting your bot. This is due to how Ballsdex packages are loaded. To solve this, open up the `bot.py` file in `carfigures/core` and search for a line that starts with `PACKAGES`. At the end of the line, add a comma and quotation marks before the square bracket.
 
 Add the package name inside the quotation marks, like this `, "battle"`. The line should look similar to this: `PACKAGES = ["battle", "merge", "boss"]`
 
