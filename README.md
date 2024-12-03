@@ -1,6 +1,6 @@
-# BDPackages
+# CFPackages
 
-Welcome to the official repository that stores all custom package installers.
+Welcome to the official repository that stores all custom package installers of CarFigures.
 
 ## Installing Packages
 
